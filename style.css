@@ -3,12 +3,12 @@
 
 /* index */
 
-/* .card {
-    width: 250px;
-} */
+.card {
+    height: 425.56px;
+}
 
 #img-banner {
-    background-color: rgba(41,40,38,255);
+    background-color: rgba(41, 40, 38, 255);
     background-image: url(./images/Crudazon-removebg-preview.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -19,6 +19,6 @@
 
 #img-details {
     margin-left: 2em;
-    border: 5px solid;
-    height: 300px;
+    border: 3px solid;
+    height: 450px;
 }

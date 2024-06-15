@@ -69,7 +69,7 @@ const cardGenerate = (obj) => {
     const cardBtn = document.createElement('a')
     cardBtn.className = 'btn btn-primary'
     cardBtn.innerText = 'Dettagli'
-    cardBtn.href = './details.html'
+    cardBtn.href = `./details.html?productId=${obj._id}`
 
     const btnModify = document.createElement('a')
     btnModify.className = 'btn btn-info ml-2'
