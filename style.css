@@ -16,3 +16,9 @@
 
     height: 300px;
 }
+
+#img-details {
+    margin-left: 2em;
+    border: 5px solid;
+    height: 300px;
+}

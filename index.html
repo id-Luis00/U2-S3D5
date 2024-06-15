@@ -14,50 +14,43 @@
 
     <header>
 
-        <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Crudazon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="backoffice" class="nav-link" href="./backoffice.html">Backoffice</a>
+                        </li>
+                    </ul>
 
-
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Crudazon</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="backoffice" class="nav-link" href="./backoffice.html">Backoffice</a>
-                            </li>
-                        </ul>
-                        
-                    </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
 
-        </div>
 
-
-        
     </header>
     <main>
 
         <div class="container">
             <h1>Lista dei prodotti:</h1>
-            
-            <div  class="container mt-5">
+
+            <div class="container mt-5">
                 <div id="cards-container" class="row row-cols-md-4">
                     <!-- qui verranno inseriti i vari prodotti -->
 
                 </div>
             </div>
         </div>
-        <a href="./backoffice.html?productId=">vai a pagina backoffice</a>
     </main>
 
 
