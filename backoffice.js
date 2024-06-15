@@ -2,7 +2,7 @@
 const id = new URLSearchParams(window.location.search).get("productId");
 
 
-const URL = id ? "https://striveschool-api.herokuapp.com/api/product/" + id : "https://striveschool-api.herokuapp.com/api/agenda/";
+const URL = id ? "https://striveschool-api.herokuapp.com/api/product/" + id : "https://striveschool-api.herokuapp.com/api/product/";
 const apiKey = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjZiZmJjNTdjMjM5YzAwMTUyZjRiNTEiLCJpYXQiOjE3MTgzNTI4MzcsImV4cCI6MTcxOTU2MjQzN30.pz3mCzH8LRoCkcUd22gG9Ml855nmvmuiCr49BUc83_4'
 
 
@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             })
             .then(productObj => {
-                console.log('nostro array di oggetti  ---->', productObj)
+                console.log('il nostro oggetto  ---->', productObj)
 
                 const { name, brand, description, imageUrl, price } = productObj
 
@@ -136,15 +136,22 @@ const handleSubmit = e => {
     })
         .then(resp => {
             if (resp.ok) {
+                console.log('RESPONSE ----------->', resp)
                 return resp.json()
             }
             else {
-                throw new Error('errore nella creazione del prodotto ------------>');
+                throw new Error('errore nella creazione del prodotto ------------>', resp);
             }
         })
         .then(createdProduct => {
-            console.log("PRODOTTO CREATO", createdProduct)
-            alert('Prodotto creato!!!')
+
+            if (id) {
+                console.log("PRODOTTO MODIFICATO", createdProduct)
+                alert('Prodotto modificato!!!')
+            } else {
+                console.log("PRODOTTO CREATO", createdProduct)
+                alert('Prodotto creato!!!')
+            }
         })
         .catch(err => console.log(err))
 }

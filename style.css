@@ -1,0 +1,18 @@
+@import "./bootstrap-5.3.3/scss/bootstrap.scss";
+
+
+/* index */
+
+/* .card {
+    width: 250px;
+} */
+
+#img-banner {
+    background-color: rgba(41,40,38,255);
+    background-image: url(./images/Crudazon-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+
+    height: 300px;
+}
